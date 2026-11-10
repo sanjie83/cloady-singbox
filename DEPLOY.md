@@ -2,7 +2,7 @@
 
 1. 在 Cloady 创建 Application，选择 GitHub Repository：`sanjie83/cloady-singbox`。
 2. 分支选择 `main`，Root Directory 留空，使用仓库根目录的 `compose.yaml`。
-3. 在 Cloady Environment 中添加 `VLESS_UUID`（必填，设为 Secret）、`WS_PATH`（可选，默认 `/ws`）、`LISTEN_PORT`（可选，默认 `3000`）。
+3. 在 Cloady Environment 中添加 `VLESS_UUID`（必填，设为 Secret）和 `WS_PATH`（可选，默认 `/ws`）。
 4. 将 Web Service / Target Port 指向容器内的 `3000`。
 5. 确认 Cloady HTTPS Web Endpoint 支持 WebSocket Upgrade，并将请求转发到容器 HTTP 端口。TLS 在 Cloady 边缘终止，容器内部不配置证书。
 6. Deploy，查看日志中 `sing-box check` 是否通过。
