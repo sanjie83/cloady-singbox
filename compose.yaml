@@ -7,5 +7,5 @@ services:
     environment:
       VLESS_UUID: ${VLESS_UUID:?Set VLESS_UUID in Cloady Environment}
       WS_PATH: ${WS_PATH:-/ws}
-    expose:
+    ports:
       - "3000"
