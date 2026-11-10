@@ -1,0 +1,10 @@
+.git
+.github
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+README*
+DEPLOY.md
+CHANGELOG.md
